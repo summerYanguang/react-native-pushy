@@ -1,6 +1,6 @@
 {
   "name": "react-native-update",
-  "version": "1.1.1",
+  "version": "3.0.1",
   "description": "react-native hot update",
   "main": "lib/index.js",
   "scripts": {
@@ -33,12 +33,11 @@
     "isomorphic-fetch": "^2.2.1",
     "mkdir-recursive": "^0.2.1",
     "node-apk-parser": "^0.2.3",
-    "node-bsdiff": "^0.1.4",
     "progress": "^1.1.8",
     "read": "^1.0.7",
     "request": "^2.69.0",
     "rimraf": "^2.5.2",
-    "yauzl": "^2.4.1",
+    "yauzl": "2.4.1",
     "yazl": "2.3.0"
   },
   "devDependencies": {

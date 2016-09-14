@@ -24,6 +24,7 @@ const commands = {
 
 exports.run = function () {
   const argv = require('cli-arguments').parse(require('../cli.json'));
+  global.NO_INTERACTIVE = argv.options['no-interactive'];
 
   loadSession()
     .then(()=>commands[argv.command](argv))
@@ -32,6 +33,7 @@ exports.run = function () {
         console.log('Not loggined.\nRun `pushy login` at your project directory to login.');
         return;
       }
-      console.error(err.message);
+      console.error(err.stack);
+      process.exit(-1);
     });
 };
